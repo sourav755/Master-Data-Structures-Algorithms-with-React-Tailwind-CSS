@@ -1,8 +1,11 @@
-# React + Vite
+<h2>DSA Landing Page (React & Tailwind CSS)</h2>
+This repository holds the codebase for a landing page promoting a future learning platform focused on Data Structures and Algorithms (DSA).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h3>Technology Stack:</h3>
+<ul>
+<li>Frontend: React</li>
+<li>Styling: Tailwind CSS</li>
+</ul>
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h3>Current Status:</h3>
+This is a non-functional landing page showcasing the intended design and development stack.
