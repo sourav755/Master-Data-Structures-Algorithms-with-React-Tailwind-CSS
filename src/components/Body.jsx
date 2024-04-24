@@ -1,3 +1,5 @@
+import ReviewSection from "./ReviewSection";
+
 function Body() {
   return (
     <>
@@ -51,71 +53,37 @@ function Body() {
             <img src="./images/dsa-2.png" alt="" />
           </div>
 
+          {/* Deleted */}
+
           <div className="mt-12 text-center">
             <ul className="text-center">
-              <li className="flex gap-2">
-                <img
-                  src="./images/checkmark.png"
-                  alt="checkmark"
-                  className="h-6"
-                />
-                <span>15+ algo patterns discussed</span>
-              </li>
-              <li className="flex gap-2">
-                <img
-                  src="./images/checkmark.png"
-                  alt="checkmark"
-                  className="h-6"
-                />
-                <span>Detailed solutions and explanations</span>
-              </li>
-              <li className="flex gap-2">
-                <img
-                  src="./images/checkmark.png"
-                  alt="checkmark"
-                  className="h-6"
-                />
-                <span>All in one revision guide</span>
-              </li>
-              <li className="flex gap-2">
-                <img
-                  src="./images/checkmark.png"
-                  alt="checkmark"
-                  className="h-6"
-                />
-                <span>Awesome resources, articles, blogs</span>
-              </li>
-              <li className="flex gap-2">
-                <img
-                  src="./images/checkmark.png"
-                  alt="checkmark"
-                  className="h-6"
-                />
-                <span>Visualizers and animations included</span>
-              </li>
-              <li className="flex gap-2">
-                <img
-                  src="./images/checkmark.png"
-                  alt="checkmark"
-                  className="h-6"
-                />
-                <span>100 pages of quality content</span>
-              </li>
-              <li className="flex gap-2">
-                <img
-                  src="./images/checkmark.png"
-                  alt="checkmark"
-                  className="h-6"
-                />
-                <span>Concepts explained for beginners</span>
-              </li>
+              {[
+                "15+ algo patterns discussed",
+                "Detailed solutions and explanations",
+                "All in one revision guide",
+                "Awesome resources, articles, blogs",
+                "Visualizers and animations included",
+                "100 pages of quality content",
+                "Concepts explained for beginners",
+              ].map((item, index) => (
+                <li className="flex items-center gap-2" key={index}>
+                  <img
+                    src="./images/checkmark.png"
+                    alt="checkmark"
+                    className="h-6"
+                  />
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
-            <button className="mt-8 border-solid bg-orange-500 text-white rounded-full p-3 px-6 font-bold">
+            <button className="mt-8 border-solid bg-orange-500 text-white rounded-full p-3 px-6 font-bold text-center">
               Download for Free
             </button>
           </div>
         </div>
       </div>
+
+      <ReviewSection></ReviewSection>
     </>
   );
 }
