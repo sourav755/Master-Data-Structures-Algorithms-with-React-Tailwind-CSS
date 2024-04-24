@@ -3,7 +3,7 @@ import ReviewSection from "./ReviewSection";
 function Body() {
   return (
     <>
-      <div className="mt-16">
+      <div className="mt-16 md:flex">
         <div className="items-center leading-tight flex flex-col">
           <h1 className="text-5xl items-center font-extrabold font-playfair mb-5 pt-4">
             Best way to revise for your next coding interview
@@ -34,9 +34,13 @@ function Body() {
         </div>
 
         <div className="mt-6 relative text-center">
-          <img src="./images/dsa-main.png" alt="" />
+          <img
+            src="./images/dsa-main.png"
+            alt=""
+            className="md:pt-16 md:px-6"
+          />
 
-          <div className="rounded-full inline-block p-4 absolute right-1 top-[-0.75rem] bg-green-700 text-white text-center font-playfair">
+          <div className="rounded-full inline-block p-4 absolute right-1 top-[-0.75rem] bg-green-700 text-white text-center font-playfair md:top-[3.25rem] md:right-[1.5rem] md:p-2 md:text-[12px]">
             New <br />
             Release
           </div>
@@ -48,9 +52,9 @@ function Body() {
           What's Included
         </h1>
 
-        <div>
+        <div className="md:flex md:gap-3">
           <div>
-            <img src="./images/dsa-2.png" alt="" />
+            <img src="./images/dsa-2.png" alt="" className="md:w-[400px]" />
           </div>
 
           {/* Deleted */}
@@ -66,7 +70,10 @@ function Body() {
                 "100 pages of quality content",
                 "Concepts explained for beginners",
               ].map((item, index) => (
-                <li className="flex items-center gap-2" key={index}>
+                <li
+                  className="flex items-center gap-2 md:mb-3 md:text-[18px]"
+                  key={index}
+                >
                   <img
                     src="./images/checkmark.png"
                     alt="checkmark"

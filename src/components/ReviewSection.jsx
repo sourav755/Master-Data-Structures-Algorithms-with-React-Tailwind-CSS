@@ -31,9 +31,9 @@ function ReviewSection() {
   ];
 
   return (
-    <div className="mt-20">
+    <div className="mt-20 md:flex md:justify-between md:flex-wrap">
       {reviews.map((review, index) => (
-        <div className="p-4 border-solid border-t-2 border-b-2 m-3">
+        <div className="p-4 border-solid border-t-2 border-b-2 m-3 md:border-l-2 md:border-r-2 md:w-[46%]">
           <div>
             <p className="italic">{review.review}</p>
           </div>
